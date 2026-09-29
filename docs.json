@@ -1,0 +1,124 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "sequoia",
+  "name": "Arlo",
+  "colors": {
+    "primary": "#6babf2",
+    "light": "#6babf2",
+    "dark": "#084991"
+  },
+  "favicon": {
+    "light": "/images/Logoblack.png",
+    "dark": "/images/fd_logo.svg"
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "index",
+              "how-it-works",
+              "before-you-start"
+            ],
+            "icon": "flag-checkered"
+          },
+          {
+            "group": "Project Setup",
+            "icon": "clipboard-list",
+            "pages": [
+              "project-setup/scoping",
+              "project-setup/creating-a-brief",
+              "project-setup/discussion-guides"
+            ]
+          },
+          {
+            "group": "Audience & Sampling",
+            "pages": [
+              "audience-sampling/defining-your-audience",
+              "audience-sampling/cost-and-timelines"
+            ],
+            "icon": "users"
+          },
+          {
+            "group": "Launch & Fieldwork",
+            "icon": "rocket",
+            "pages": [
+              "launch-fieldwork/approve-and-launch",
+              "launch-fieldwork/data-collection",
+              "launch-fieldwork/data-quality"
+            ]
+          },
+          {
+            "group": "Data & Analysis",
+            "pages": [
+              "data-analysis/interactive-analysis",
+              "data-analysis/automated-reports"
+            ],
+            "icon": "chart-mixed"
+          },
+          {
+            "group": "Trust & Governance",
+            "icon": "shield-check",
+            "pages": [
+              "trust-governance/guardrails",
+              "trust-governance/rigor-bias-defensibility",
+              "trust-governance/data-safety"
+            ]
+          },
+          {
+            "group": "Exports & Integrations",
+            "pages": [
+              "exports-integrations/overview"
+            ],
+            "icon": "arrow-up-right-from-square"
+          },
+          {
+            "group": "Account & Billing",
+            "pages": [
+              "account-billing/overview"
+            ],
+            "icon": "gear"
+          }
+        ]
+      }
+    ]
+  },
+  "logo": {
+    "light": "/images/Logoblack.png",
+    "dark": "/images/fd_logo.svg",
+    "href": "https://www.focaldata.com/"
+  },
+  "navbar": {
+    "links": [],
+    "primary": {
+      "type": "button",
+      "label": "Go to platform",
+      "href": "https://orchestra.focaldata.com"
+    }
+  },
+  "contextual": {
+    "options": [
+     "copy",
+     "view",
+     "chatgpt",
+     "claude",
+     "perplexity",
+     "mcp",
+     "cursor",
+     "vscode"
+   ]
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/focaldata",
+      "linkedin": "https://www.linkedin.com/company/focaldata"
+    }
+  },
+  "description": "Documentation for Arlo — the platform for AI-led research with real participants.",
+  "fonts": {
+    "family": "Inter"
+  }
+}

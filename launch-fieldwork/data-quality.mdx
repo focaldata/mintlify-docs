@@ -1,0 +1,25 @@
+---
+title: "Data quality"
+description: "Layered safeguards that keep low-quality responses out of the dataset"
+icon: "shield-check"
+---
+
+Data quality is enforced at multiple points in the workflow. Rather than relying on a single check at the end, the system applies layered safeguards designed to prevent low-effort or non-serious responses from entering the final dataset.
+
+## Three layers of protection
+
+<Steps>
+  <Step title="Panel-level screening" icon="id-card">
+    Before interviews begin, participants are screened through the panel's own eligibility and quality controls — including bank-grade ID verification, IP/location checks, and bot detection. Panel members also submit to regular screening refreshes and identity re-confirmation to keep receiving invitations. This ensures only participants meeting baseline quality and eligibility are invited.
+  </Step>
+  <Step title="In-interview moderation checks" icon="gauge-high">
+    During interviews, the AI moderator applies real-time quality checks. Where responses repeatedly fall below minimum standards (extremely short, non-responsive, or obviously disengaged answers), the moderator escalates through a clear warning pattern. Continued low-quality behaviour results in the interview being terminated — a "three strikes" rule. This is the first active barrier against poor-quality data.
+  </Step>
+  <Step title="Post-fieldwork review" icon="magnifying-glass-chart">
+    After collection, automated checks identify interviews that may fall below quality thresholds even if not flagged during fieldwork. These focus on interviews with too few question–answer exchanges (a sign of outlier-length answers or bots) and too many (a sign of low engagement).
+  </Step>
+</Steps>
+
+<Note>
+  These layers work together: panel screening controls who enters, in-interview checks catch problems live, and post-fieldwork review is the backstop before data reaches analysis.
+</Note>

@@ -1,0 +1,61 @@
+---
+title: "Defining your audience"
+description: "Define who to recruit and assess whether they can be reached"
+icon: "users-viewfinder"
+---
+
+This step translates your target audience into executable recruitment criteria and gives a realistic assessment of whether that audience can be reached on panel. The audience and feasibility agents work as a pair — they actively reason about audience definitions, recruitment logic, and practical constraints rather than just formatting your inputs.
+
+## How feasibility works
+
+For panel-based projects, the platform assesses feasibility by:
+
+<Steps>
+  <Step title="Interpreting the audience definition">
+    Translating your description (market, age range, behaviours, attributes) into concrete eligibility criteria.
+  </Step>
+  <Step title="Estimating incidence rate (IR)">
+    Using heuristics, prior knowledge, and historical data to approximate how common this audience is in the general population. This estimate drives cost and timeline calculations.
+  </Step>
+  <Step title="Checking panel reachability">
+    Determining whether the configured panel (e.g. Prolific) can reasonably supply this group. The agent understands, for example, which panels are 18\+ only, or which markets have enough supply for rapid recruitment.
+  </Step>
+  <Step title="Providing a feasibility summary">
+    Including an indicative incidence rate, cost and timeline guidance, and any warnings or recommendations.
+  </Step>
+</Steps>
+
+When you propose an audience that's difficult or impossible to reach, the system flags it and recommends adjustments.
+
+## Screening vs profiling
+
+<CardGroup cols={2}>
+  <Card title="Screening questions" icon="filter">
+    Determine eligibility. Once the audience is confirmed feasible, the agent begins creating screener questions for it.
+  </Card>
+
+  <Card title="Profiling questions" icon="user-tag">
+    Do not determine eligibility. They capture descriptive context — demographic or attitudinal detail — that helps interpretation and segmentation in analysis.
+  </Card>
+</CardGroup>
+
+Profiling is most valuable when purposeful: enough to explain differences between groups you care about, without turning the project into a complex quant-style design.
+
+## Iterating on your audience
+
+Iteration is normal as you refine the definition based on feasibility feedback.
+
+| Issue | Example prompt |
+| --- | --- |
+| Incidence too low | "The IR looks too low. Broaden the age range to 25–45 and change the purchase requirement from past 3 months to past 12 months." |
+| Unnecessary exclusions | "Remove the exclusion for people who've participated in research recently. That's making this too narrow." |
+| Sample vs timeline trade-off | "If we reduce the sample from 50 to 30 interviews, how much faster would fieldwork be? Show me cost and timing for both." |
+| Refining profiling | "Add profiling questions about household composition and employment status — we'll need those for segmentation." |
+
+<Tip>
+  This is often where routing decisions become clear: ultra-narrow B2B targets, complex quota needs, or markets with limited panel supply may need a managed route rather than self-service.
+</Tip>
+
+## Using your own audience
+
+Using your own audience is possible within the system. To set this up, reach out to your Focaldata account manager. Own-audience and universal-link projects skip the feasibility agent and follow a fixed per-respondent pricing model.

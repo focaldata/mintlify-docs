@@ -1,0 +1,44 @@
+---
+title: "Creating a brief"
+description: "Turn your context and objectives into a structured brief"
+icon: "file-lines"
+---
+
+This step converts rough ideas into a clear set of research objectives and project context. The briefing agent takes your inputs — which may range from highly detailed to quite broad — and produces a structured artefact that downstream agents and humans can use.
+
+## What a brief specifies
+
+A Focaldata brief captures:
+
+- Overall focus
+- Business background
+- Growth task / strategic imperative
+- Business objectives
+- Research objectives and key questions
+- Proposed forward action
+- What success looks like
+
+## How the briefing agent works
+
+The briefing agent works in a single pass: you provide context and objectives, and it generates a complete artefact in one step. Unlike some other platform agents, it does not iterate through multiple internal review stages. If you want changes, you either regenerate with better instructions or edit the output manually.
+
+<Warning>
+  The agent assumes a brand-focused market research context by default, so language tends toward commercial framing. If you're working on NGO, public sector, or policy research, state that explicitly upfront or the output may read as "brand-tilted".
+</Warning>
+
+Specificity is roughly proportional to the richness of the context you provide. Rich context — business background, decision stakes, constraints, specific audiences — produces a high-quality, tailored brief. Minimal context (e.g. just "I want to understand energy drink consumers") produces a more generic brief, with gaps filled by assumed business rationale. The system will always attempt a full brief, even from thin inputs.
+
+The agent also has implicit awareness of what the platform can support, and will push back on requests outside consumer or stakeholder research scope. For example, "find the best-value product in supermarkets" is rejected as external cost analysis — but reframed as "talk to consumers about which product they see as best value and why", it proceeds as researchable qualitative work.
+
+## Ways to start a brief
+
+| Starting point | Example prompt |
+| --- | --- |
+| Decision focus | "We need to choose between three messaging directions for a healthcare policy campaign aimed at patients. Help me create a brief to test these with affected patients. This is for an NGO client, not a commercial brand." |
+| Research objectives | "Create a brief for exploring how Gen Z consumers (18–25) think about financial planning and their expectations from banking apps. Our client is a challenger bank trying to understand barriers to adoption." |
+| Audience focus | "I want to talk to parents of children with ADHD in the UK. Help me build a brief to understand their experiences with school support systems. This is for a policy advocacy project." |
+| Budget / timeline | "I have £850 and need results in 5 days. What kind of qualitative study can I run on consumer reactions to new sustainability packaging for a household goods brand?" |
+
+<Tip>
+  The briefing agent has fewer built-in guardrails than the moderation or feasibility agents. Treat the brief as the foundation everything downstream relies on — it's worth getting right before moving on.
+</Tip>
